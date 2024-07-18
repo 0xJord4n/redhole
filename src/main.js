@@ -23,42 +23,28 @@ document.onreadystatechange = async () => {
 
   const cursusBeginDate = new Date(profile.cursus_begin_date);
 
-  console.log("[REDHOLE] cursusBeginDate:", cursusBeginDate.getDate());
-
-  const blackholeDate = new Date(cursusBeginDate);
-  blackholeDate.setDate(
-    cursusBeginDate.getDate() +
-      BLACKHOLE_PER_MILESTONE_FROM_START[profile.milestone]
+  const blackholeDate = new Date(
+    profile.pace ? cursusBeginDate : profile.deadline
   );
-
-  const todayDate = new Date();
-  const deadlineDate = new Date(profile.deadline);
-
-  if (todayDate > deadlineDate) {
-    if (profile.deadline) {
-      console.log("[REDHOLE] the deadline has passed");
-      isDeadlineExceeded = true;
-    }
-  } else {
-    console.log("[REDHOLE] the deadline has not passed.");
-    isDeadlineExceeded = false;
+  if (profile.pace) {
+    blackholeDate.setDate(
+      cursusBeginDate.getDate() +
+        BLACKHOLE_PER_MILESTONE_FROM_START[profile.milestone]
+    );
   }
 
   const textSelector = document.querySelector(
     "#root > div > div.content.md\\:pl-20.pt-16.content-animation > div:nth-child(1) > header > div > div.border.border-neutral-600.bg-ft-gray\\/50.rounded-xl.relative.flex.flex-col.w-full.sm\\:gap-3.justify-between > div.pl-7.pt-8.flex.flex-col.lg\\:flex-row > div.lg\\:pl-2.overflow-hidden > h2.text-2xl.font-bold.text-center.py-4.lg\\:text-left.lg\\:py-0.drop-shadow-md"
   );
 
-  if (isDeadlineExceeded)
-  {
+  if (Date.now() > blackholeDate.getTime()) {
     textSelector.insertAdjacentHTML(
       "afterend",
       `
     <h2 class="text-xl font-bold text-center py-4 lg:text-left lg:py-0 drop-shadow-md text-destructive">Been absorbed by the BlackHole</h2>
     `
     );
-  }
-  else
-  {
+  } else {
     textSelector.insertAdjacentHTML(
       "afterend",
       `
@@ -67,6 +53,7 @@ document.onreadystatechange = async () => {
     }</h2>
     `
     );
-    console.log("[REDHOLE] Blackhole date:", blackholeDate);
   }
+
+  console.log("[REDHOLE] Blackhole date:", blackholeDate);
 };
