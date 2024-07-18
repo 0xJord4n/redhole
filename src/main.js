@@ -35,8 +35,10 @@ document.onreadystatechange = async () => {
   const deadlineDate = new Date(profile.deadline);
 
   if (todayDate > deadlineDate) {
-    console.log("[REDHOLE] the deadline has passed");
-    isDeadlineExceeded = true;
+    if (profile.deadline) {
+      console.log("[REDHOLE] the deadline has passed");
+      isDeadlineExceeded = true;
+    }
   } else {
     console.log("[REDHOLE] the deadline has not passed.");
     isDeadlineExceeded = false;
