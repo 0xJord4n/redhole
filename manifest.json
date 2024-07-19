@@ -7,6 +7,12 @@
     "https://pace-system.42.fr/api/v1/*/profile",
     "https://profile-aggr.intra.42.fr/api/v2/users/*"
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "contact@0xjordan.dev",
+      "strict_min_version": "42.0"
+    }
+  },
   "incognito": "spanning",
   "content_scripts": [
     {
