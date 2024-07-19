@@ -10,7 +10,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "contact@0xjordan.dev",
-      "strict_min_version": "42.0"
+      "strict_min_version": "58.0"
     }
   },
   "incognito": "spanning",
