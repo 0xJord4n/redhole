@@ -17,6 +17,13 @@ Redhole is a browser extension designed to help users track and view blackhole d
 - Seamless integration with the 42 network's profile system.
 - Runs in both normal and incognito mode.
 
+## Available on Web Stores
+
+You can also install the extension directly from the browser web stores:
+
+- [Google Chrome Web Store](https://chromewebstore.google.com/detail/redhole/phiflbacebjafdkhipabfamhfiogkpoo)
+- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/redhole)
+
 ## Installation
 
 1. Download or clone this repository to your local machine.
