@@ -21,7 +21,7 @@ document.onreadystatechange = async () => {
 
   console.log("[REDHOLE] Cursus data:", profile);
 
-  if (!profile.deadline) return;
+  if (!profile.deadline || profile.milestones[6].validated_at) return;
 
   const cursusBeginDate = new Date(profile.cursus_begin_date);
 
