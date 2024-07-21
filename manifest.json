@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Redhole",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redhole helps you track and view blackhole dates for yourself and others on the 42 network using intra.42.fr.",
   "host_permissions": [
     "https://pace-system.42.fr/api/v1/*/profile",
