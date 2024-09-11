@@ -29,7 +29,7 @@ document.onreadystatechange = async () => {
 
   blackholeDate.setDate(
     cursusBeginDate.getDate() +
-      BLACKHOLE_PER_MILESTONE_FROM_START[profile.milestone]
+      (BLACKHOLE_PER_MILESTONE_FROM_START[profile.milestone] - 1)
   );
 
   const textSelector = document.querySelector(
