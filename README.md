@@ -1,6 +1,6 @@
 # Redhole
 
-![Version](https://img.shields.io/badge/version-1.0-blue)
+![Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2F0xJord4n%2Fredhole%2Frefs%2Fheads%2Fmain%2Fpackage.json&query=%24.version&label=version)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Maintenance](https://img.shields.io/badge/maintained-yes-brightgreen)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-orange)
