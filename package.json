@@ -1,0 +1,13 @@
+{
+  "name": "redhole",
+  "version": "1.0.3",
+  "description": "![Version](https://img.shields.io/badge/version-1.0-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Maintenance](https://img.shields.io/badge/maintained-yes-brightgreen) ![Contributions](https://img.shields.io/badge/contributions-welcome-orange) [![GitHub issues](https://img.shields.io/github/issues/0xJord4n/redhole)](https://github.com/0xJord4n/redhole/issues) [![GitHub stars](https://img.shields.io/github/stars/0xJord4n/redhole)](https://github.com/0xJord4n/redhole/stargazers) [![GitHub forks](https://img.shields.io/github/forks/0xJord4n/redhole)](https://github.com/0xJord4n/redhole/network)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "",
+    "ci": "npm i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
