@@ -19,7 +19,6 @@ logs/
 *.log
 
 # Dependency lock files
-package-lock.json
 yarn.lock
 
 # Testing
