@@ -11,7 +11,7 @@ const getAccessToken = () => {
 
 const getUserId = async (accessToken, login) => {
   const response = await fetch(
-    `https://profile-aggr.intra.42.fr/api/v2/users/${login}`,
+    `https://intrapy.intra.42.fr/api/v1/users/${login}/summary`,
     {
       headers: {
         authorization: `Bearer ${accessToken}`,
