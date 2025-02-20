@@ -5,7 +5,8 @@
   "description": "Redhole helps you track and view blackhole dates for yourself and others on the 42 network using intra.42.fr.",
   "host_permissions": [
     "https://pace-system.42.fr/api/v1/*/profile",
-    "https://profile-aggr.intra.42.fr/api/v2/users/*"
+    "https://profile-aggr.intra.42.fr/api/v2/users/*",
+    "https://intrapy.intra.42.fr/api/v1/users/*/summary"
   ],
   "browser_specific_settings": {
     "gecko": {
